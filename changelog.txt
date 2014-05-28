@@ -5,6 +5,11 @@ match the actual issue resolution (i.e. a bug might not be a bug). Please
 refer to the particular case on JIRA using the issue tracking number to learn
 more about each case.
 
+Changes in version 4.2.12-cru-fork-2014-5-28
+------------------------------------------------------------------------------------------------------------------------
+Forked (temporarily, hopefully) to fix:
+    * [HHH-5764] - AssertionFailure Unexpected nested component on the referenced entity when mapping a @MapsId
+
 Changes in version 4.2.12 (2014.04.08)
 ------------------------------------------------------------------------------------------------------------------------
 

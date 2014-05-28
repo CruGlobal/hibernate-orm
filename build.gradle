@@ -51,10 +51,11 @@ subprojects { subProject ->
     defaultTasks 'build'
 
     group = 'org.hibernate'
-    version = '4.2.13-SNAPSHOT'
+	cruExtension = 'cru-fork-2014-5-28'
+    version = '4.2.12-' + cruExtension
     
     // The OSGi manifest exported package versions need to be only the numerical release -- no "SNAPSHOT" or "Final"
-    exportPackageVersion = version.replaceAll("-SNAPSHOT", "");
+    exportPackageVersion = version.replaceAll("-SNAPSHOT", "").replaceAll("-" + cruExtension, "");
     exportPackageVersion = exportPackageVersion.replaceAll(".Final", "");
 
     // minimize changes, at least for now (gradle uses 'build' by default)..
